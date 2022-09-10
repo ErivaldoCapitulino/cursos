@@ -9,7 +9,7 @@ ReactDOM.render(
   <div>
     {/* <strong> Olá React!!! </strong> */}
     {/* {tag} */}
-    <Primeiro /> <br /> {/** Chamado o primeiro componentes */}
+    <Primeiro /> <br /> {/** Chamado o primeiro componente */}
     <Primeiro></Primeiro> {/** Pode ser dessa forma também */}
   </div>,
   document.getElementById("root")
