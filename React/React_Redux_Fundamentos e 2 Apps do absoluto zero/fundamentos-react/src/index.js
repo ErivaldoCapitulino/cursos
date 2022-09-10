@@ -1,16 +1,19 @@
+import ReactDOM from "react-dom/client";
 import React from "react";
-import ReactDOM from "react-dom";
 import "./index.css";
 import Primeiro from "./components/basicos/Primeiro";
+import ComParametro from "./components/basicos/ComParametro";
 
-//const tag = <strong>Olá Mundo</strong>;
-
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <div>
-    {/* <strong> Olá React!!! </strong> */}
-    {/* {tag} */}
-    <Primeiro /> <br /> {/** Chamado o primeiro componente */}
-    <Primeiro></Primeiro> {/** Pode ser dessa forma também */}
-  </div>,
-  document.getElementById("root")
+    <Primeiro /> <br />
+    <Primeiro></Primeiro>
+    <ComParametro
+      aluno="Gabriel"
+      titulo="Situação do aluno"
+      subtitulo="Pedro"
+      nota={9.0}
+    />
+  </div>
 );
