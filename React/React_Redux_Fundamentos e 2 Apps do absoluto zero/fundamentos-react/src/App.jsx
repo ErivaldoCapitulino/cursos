@@ -7,12 +7,17 @@ import Card from "./components/layout/Card";
 import Fragmento from "./components/basicos/Fragmento";
 import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
+import ListaAlunos from "./components/repeticao/ListaAlunos";
 
 export default function App() {
   return (
     <div className="Apps">
       <h1>Fundamentos React</h1>
       <div className="Cards">
+        <Card titulo="#6 Repetição" color="#FF4C65">
+          <ListaAlunos />
+        </Card>
+
         <Card titulo="#5 Componente com Filhos" color="#00C8F8">
           <Familia sobrenome="Silva">
             <FamiliaMembro nome="Erivaldo" />

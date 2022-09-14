@@ -4,7 +4,7 @@ import "./FamiliaMembro";
 const Familia = (props) => {
   return (
     <div>
-      {React.Children.map((child, i) => {
+      {React.Children.map(props.children, (child, i) => {
         return cloneElement(child, { ...props, key: i });
       })}
     </div>
