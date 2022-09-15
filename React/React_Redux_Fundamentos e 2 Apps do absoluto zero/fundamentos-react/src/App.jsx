@@ -9,12 +9,20 @@ import Familia from "./components/basicos/Familia";
 import FamiliaMembro from "./components/basicos/FamiliaMembro";
 import ListaAlunos from "./components/repeticao/ListaAlunos";
 import ListaProdutos from "./components/repeticao/ListaProdutos";
+import ParOuImpar from "./components/condicional/ParOuImpar";
+import UsuarioInfo from "./components/condicional/UsuarioInfo";
 
 export default function App() {
   return (
     <div className="Apps">
       <h1>Fundamentos React</h1>
       <div className="Cards">
+        <Card titulo="#8 Renderização Condicional" color="#982395">
+          <ParOuImpar numero={20}></ParOuImpar>
+          <UsuarioInfo usuario={{ nome: "Erivaldo" }} />
+          <UsuarioInfo usuario={""} />
+        </Card>
+
         <Card titulo="#7 Desafio Repetição" color="#3A9AD9">
           <ListaProdutos />
         </Card>
