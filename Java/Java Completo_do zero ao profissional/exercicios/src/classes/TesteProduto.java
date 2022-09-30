@@ -7,13 +7,11 @@ public class TesteProduto {
 		var p1 = new Produto();
 		p1.nome = "Bicicleta";
 		p1.preco = 650;
-		p1.desconto = 0.1;
 		
 		Produto p2 = new Produto("Notebook");
 		p2.preco = 3500.00;
-		p2.desconto = 0.2;
 		
-		Produto p3 = new Produto("Tablet", 800, 0.1);
+		Produto p3 = new Produto("Tablet", 800, Produto.desconto);
 		
 		System.out.println(p1.nome);
 		System.out.println(p2.nome);
